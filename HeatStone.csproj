@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MyApp</RootNamespace>
+  </PropertyGroup>
+
+  <Target Name="BuildCSS" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="$(ProjectDir)obj\$(ConfigurationName)\$(TargetFramework)\scopedcss\projectbundle\$(ProjectName).bundle.scp.css" DestinationFolder="$(ProjectDir)wwwroot\css\" ContinueOnError="false" />
+    <Exec EnvironmentVariables="NODE_ENV=production" Command="npx tailwindcss -i ./wwwroot/css/app.css -o ./wwwroot/css/app.min.css --minify" />
+  </Target>
+
+  <Target Name="WatchCSS">
+    <Exec EnvironmentVariables="NODE_ENV=production" Command="npx tailwindcss -i ./wwwroot/css/app.css -o ./wwwroot/css/app.min.css --watch" />
+  </Target>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Blazor" Version="22.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.4" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models" />
+  </ItemGroup>
+
+</Project>

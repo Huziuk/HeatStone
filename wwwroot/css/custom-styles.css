@@ -1,0 +1,10 @@
+﻿.input {
+    --dxbl-text-edit-font-size: 12px;
+    --dxbl-text-edit-line-height: 12px;
+    --dxbl-text-edit-color: #3F3F3F;
+    --dxbl-text-edit-padding-x: 10px;
+    --dxbl-text-edit-border-color: #C8C8C8;
+    --dxbl-text-edit-border-radius: 0px;
+    height: 35px;
+    box-shadow: none;
+}

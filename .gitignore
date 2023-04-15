@@ -1,0 +1,16 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea
+**/.idea
+node_modules
+**/node_modules
+.vs/
+*.user
+*.log
+.editorconfig
+wwwroot/css/app.min.css
+wwwroot/css/Bitscrow.Frontend.Web.App.bundle.scp.css
+wwwroot/css/site.css
