@@ -1,10 +1,13 @@
-﻿.input {
-    --dxbl-text-edit-font-size: 12px;
-    --dxbl-text-edit-line-height: 12px;
-    --dxbl-text-edit-color: #3F3F3F;
-    --dxbl-text-edit-padding-x: 10px;
-    --dxbl-text-edit-border-color: #C8C8C8;
-    --dxbl-text-edit-border-radius: 0px;
-    height: 35px;
-    box-shadow: none;
+﻿/* Navigation */
+.nav__link:hover,
+.nav__link:focus {
+    @apply text-hoverRed
+}
+/* Buttons */
+.btn-dark {
+    @apply grid place-content-center bg-dark rounded-[5px] text-white font-semibold duration-150
+}
+.btn-dark:hover,
+.btn-dark:focus{
+    @apply bg-hoverDark
 }

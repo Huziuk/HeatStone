@@ -1,0 +1,68 @@
+﻿.phone {
+    @apply mb-[3px] md:mb-[7px] xl:mb-[3px] text-xl md2:text-[22px] xl:text-[25px]
+}
+.phone-text {
+    @apply text-[13px] md2:text-sm xl:text-base
+}
+.nav__list {
+    @apply md2:max-w-[270px] lg:max-w-none grid md2:grid-cols-2 lg:flex md2:gap-y-[7px] gap-x-[75px] md2:gap-x-[54px] xl:gap-x-[70px] font-medium text-[15px] md2:text-base lg:text-[17px] xl:text-lg
+}
+.nav__link {
+    @apply md2:px-0 border-t border-borderColor md2:border-none relative
+}
+.nav__link:not(:last-child) {
+    @apply border-b border-b-transparent
+}
+.nav__link:hover {
+    @apply border-secondWhite bg-secondWhite md2:bg-transparent md2:border-none text-dark
+}
+.nav__link:hover + .nav__link {
+    @apply border-t-secondWhite md2:border-none
+}
+.nav__link:after {
+    content: "";
+    background: url("/assets/svg/play.svg") no-repeat;
+    @apply block md2:hidden absolute w-[7px] h-[9px] top-1/2 right-5 -translate-x-1/2
+}
+.nav__link:last-child {
+    @apply border-b 
+}
+.request-btn {
+    @apply hidden md:block w-fit h-[50px] md2:h-[55px] ml-auto md2:ml-0 px-[28px] xl:px-[58px] bg-dark rounded-[5px] text-white text-[15px] font-semibold
+}
+.social-media-link {
+    background-repeat: no-repeat;
+    background-position: center;
+    @apply block w-12 h-12 rounded-[5px] bg-whiteGray duration-150
+}
+.social-media-link:hover,
+.social-media-link:focus {
+    @apply bg-dark
+}
+.social-media-link.youtube {
+    background-image: url("/assets/svg/youtube.svg");
+    background-size: 26px 20px;
+}
+.social-media-link.youtube:hover,
+.social-media-link.youtube:focus{
+    background-image: url("/assets/svg/youtube-white.svg");
+    background-size: 26px 20px;
+}
+.social-media-link.inst {
+    background-image: url("/assets/svg/instagram.svg");
+    background-size: 22px;
+}
+.social-media-link.inst:hover,
+.social-media-link.inst:focus{
+    background-image: url("/assets/svg/instagram-white.svg");
+    background-size: 22px;
+}
+.politics-link {
+    text-decoration-color: #161616;
+    @apply underline hover:underline underline-offset-[14px]
+}
+@media screen and (max-width: 425px) {
+    footer.container {
+        @apply !max-w-full !p-0
+    }
+}

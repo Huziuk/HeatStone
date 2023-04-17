@@ -1,6 +1,6 @@
 /* Header Top */
 .header__top {
-    @apply h-[62px] flex justify-between md:justify-start gap-2.5 xl:gap-[15px] items-center md:border-b border-borderColor text-dark text-[13px] xl:text-sm font-semibold
+    @apply h-[62px] flex justify-between md:justify-start gap-2.5 xl:gap-[15px] items-center md:border-b border-borderColor text-[13px] xl:text-sm font-semibold
 }
 .logo {
     @apply flex gap-[14px] md:gap-1.5 items-center 
@@ -10,9 +10,6 @@
 }
 .logo__text span {
     @apply duration-150
-}
-.logo__text span:first-child {
-    @apply text-dark
 }
 .logo__text span:last-child {
     @apply text-red
@@ -24,13 +21,6 @@
 .nav__list {
     @apply flex gap-[25px] lg:gap-10 items-center font-semibold duration-150
 }
-.nav__link:hover,
-.nav__link:focus {
-    @apply text-hoverRed
-}
-.active {
-    @apply text-red
-}
 .promotion-link {
     @apply block h-[50px] grid place-content-center px-[22px] bg-yellow rounded-[5px] font-semibold duration-150
 }
@@ -39,9 +29,5 @@
     @apply bg-hoverYellow
 }
 .call-btn {
-    @apply block h-[50px] grid place-content-center px-[22px] bg-dark rounded-[5px] text-white font-semibold duration-150
+    @apply block h-[50px] px-[22px] 
 }
-.call-btn:hover,
-.call-btn:focus{
-     @apply bg-hoverDark
- }

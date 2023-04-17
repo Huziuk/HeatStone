@@ -1,7 +1,76 @@
+/* /Shared/Components/Footer.razor.rz.scp.css */
+.phone[b-ilckyhdwlp] {
+    @apply mb-[3px] md:mb-[7px] xl:mb-[3px] text-xl md2:text-[22px] xl:text-[25px]
+}
+.phone-text[b-ilckyhdwlp] {
+    @apply text-[13px] md2:text-sm xl:text-base
+}
+.nav__list[b-ilckyhdwlp] {
+    @apply md2:max-w-[270px] lg:max-w-none grid md2:grid-cols-2 lg:flex md2:gap-y-[7px] gap-x-[75px] md2:gap-x-[54px] xl:gap-x-[70px] font-medium text-[15px] md2:text-base lg:text-[17px] xl:text-lg
+}
+.nav__link[b-ilckyhdwlp] {
+    @apply md2:px-0 border-t border-borderColor md2:border-none relative
+}
+.nav__link:not(:last-child)[b-ilckyhdwlp] {
+    @apply border-b border-b-transparent
+}
+.nav__link:hover[b-ilckyhdwlp] {
+    @apply border-secondWhite bg-secondWhite md2:bg-transparent md2:border-none text-dark
+}
+.nav__link:hover + .nav__link[b-ilckyhdwlp] {
+    @apply border-t-secondWhite md2:border-none
+}
+.nav__link[b-ilckyhdwlp]:after {
+    content: "";
+    background: url("/assets/svg/play.svg") no-repeat;
+    @apply block md2:hidden absolute w-[7px] h-[9px] top-1/2 right-5 -translate-x-1/2
+}
+.nav__link:last-child[b-ilckyhdwlp] {
+    @apply border-b 
+}
+.request-btn[b-ilckyhdwlp] {
+    @apply hidden md:block w-fit h-[50px] md2:h-[55px] ml-auto md2:ml-0 px-[28px] xl:px-[58px] bg-dark rounded-[5px] text-white text-[15px] font-semibold
+}
+.social-media-link[b-ilckyhdwlp] {
+    background-repeat: no-repeat;
+    background-position: center;
+    @apply block w-12 h-12 rounded-[5px] bg-whiteGray duration-150
+}
+.social-media-link:hover[b-ilckyhdwlp],
+.social-media-link:focus[b-ilckyhdwlp] {
+    @apply bg-dark
+}
+.social-media-link.youtube[b-ilckyhdwlp] {
+    background-image: url("/assets/svg/youtube.svg");
+    background-size: 26px 20px;
+}
+.social-media-link.youtube:hover[b-ilckyhdwlp],
+.social-media-link.youtube:focus[b-ilckyhdwlp]{
+    background-image: url("/assets/svg/youtube-white.svg");
+    background-size: 26px 20px;
+}
+.social-media-link.inst[b-ilckyhdwlp] {
+    background-image: url("/assets/svg/instagram.svg");
+    background-size: 22px;
+}
+.social-media-link.inst:hover[b-ilckyhdwlp],
+.social-media-link.inst:focus[b-ilckyhdwlp]{
+    background-image: url("/assets/svg/instagram-white.svg");
+    background-size: 22px;
+}
+.politics-link[b-ilckyhdwlp] {
+    text-decoration-color: #161616;
+    @apply underline hover:underline underline-offset-[14px]
+}
+@media screen and (max-width: 425px) {
+    footer.container[b-ilckyhdwlp] {
+        @apply !max-w-full !p-0
+    }
+}
 /* /Shared/Components/Header.razor.rz.scp.css */
 /* Header Top */
 .header__top[b-qebv4gku3h] {
-    @apply h-[62px] flex justify-between md:justify-start gap-2.5 xl:gap-[15px] items-center md:border-b border-borderColor text-dark text-[13px] xl:text-sm font-semibold
+    @apply h-[62px] flex justify-between md:justify-start gap-2.5 xl:gap-[15px] items-center md:border-b border-borderColor text-[13px] xl:text-sm font-semibold
 }
 .logo[b-qebv4gku3h] {
     @apply flex gap-[14px] md:gap-1.5 items-center 
@@ -11,9 +80,6 @@
 }
 .logo__text span[b-qebv4gku3h] {
     @apply duration-150
-}
-.logo__text span:first-child[b-qebv4gku3h] {
-    @apply text-dark
 }
 .logo__text span:last-child[b-qebv4gku3h] {
     @apply text-red
@@ -25,13 +91,6 @@
 .nav__list[b-qebv4gku3h] {
     @apply flex gap-[25px] lg:gap-10 items-center font-semibold duration-150
 }
-.nav__link:hover[b-qebv4gku3h],
-.nav__link:focus[b-qebv4gku3h] {
-    @apply text-hoverRed
-}
-.active[b-qebv4gku3h] {
-    @apply text-red
-}
 .promotion-link[b-qebv4gku3h] {
     @apply block h-[50px] grid place-content-center px-[22px] bg-yellow rounded-[5px] font-semibold duration-150
 }
@@ -40,12 +99,8 @@
     @apply bg-hoverYellow
 }
 .call-btn[b-qebv4gku3h] {
-    @apply block h-[50px] grid place-content-center px-[22px] bg-dark rounded-[5px] text-white font-semibold duration-150
+    @apply block h-[50px] px-[22px] 
 }
-.call-btn:hover[b-qebv4gku3h],
-.call-btn:focus[b-qebv4gku3h]{
-     @apply bg-hoverDark
- }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-qq0td1v84o] {
     position: relative;

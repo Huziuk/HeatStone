@@ -10,18 +10,18 @@
 
 /* Container styles */
 .container {
-    @apply px-4 sm:p-0 sm:!max-w-[400px] md:!max-w-[700px] md2:!max-w-[880px] lg:!max-w-[1004px] xl:!max-w-[1240px] 
+    @apply px-[13px] sm:p-0 sm:!max-w-[405px] md:!max-w-[700px] md2:!max-w-[880px] lg:!max-w-[1004px] xl:!max-w-[1240px] 
 }
 
 /* General Styles */
 body {
-    @apply font-mulish text-base
+    @apply font-mulish text-base text-dark
 }
 
 a:hover {
     transition-duration: inherit;
     color: inherit;
-    @apply no-underline
+    text-decoration: inherit;
 }
 
 #blazor-error-ui {
