@@ -1,7 +1,25 @@
-﻿<header>
-    
+﻿@using HeatStone.Constants
+<header>
+    <div class="container header__top">
+        <a href="@Routes.Landing" class="logo">
+            <img src="assets/svg/logo.svg" alt="">
+            <p class="logo__text"><span>HEAT</span> <span>STONE</span></p>
+        </a>
+        <p class="hidden md:block ml-auto">+38 (044) 1234567</p>
+        <p class="hidden md:block text-secondGray">Безкштовний дзвінок по Україні</p>
+        <p class="hidden xl:block ml-[75px]">Робочі дні: Пн-Сб</p>
+        <p class="hidden xl:block">Час: 9:00 - 18:00</p>
+        <button class="block md:hidden"><img src="assets/svg/burger-menu.svg" alt=""></button>
+    </div>
+    <div class="container header__bottom">
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__link"><NavLink ActiveClass="text-red" Match="NavLinkMatch.All" href="@{Routes.Catalog}">Каталог</NavLink></li>
+                <li class="nav__link"><NavLink ActiveClass="text-red" Match="NavLinkMatch.All" href="@{Routes.About}">Про нас</NavLink></li>
+                <li class="nav__link"><NavLink ActiveClass="text-red" Match="NavLinkMatch.All" href="@{Routes.OurAddresses}">Наші адреси</NavLink></li>
+                <li><a href="@Routes.Promo" class="promotion-link">Акції</a></li>
+            </ul>
+        </nav>
+        <button class="btn-dark call-btn">Замовити дзвінок</button>
+    </div>
 </header>
-
-@code {
-    
-}

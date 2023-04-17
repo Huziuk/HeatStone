@@ -1,0 +1,33 @@
+/* Header Top */
+.header__top {
+    @apply h-[62px] flex justify-between md:justify-start gap-2.5 xl:gap-[15px] items-center md:border-b border-borderColor text-[13px] xl:text-sm font-semibold
+}
+.logo {
+    @apply flex gap-[14px] md:gap-1.5 items-center 
+}
+.logo__text {
+    @apply font-firsNeue font-semibold text-sm leading-5 tracking-[3%]
+}
+.logo__text span {
+    @apply duration-150
+}
+.logo__text span:last-child {
+    @apply text-red
+}
+/* Header Bottom */
+.header__bottom {
+    @apply h-20 hidden md:flex justify-between items-center text-[15px] xl:text-base
+}
+.nav__list {
+    @apply flex gap-[25px] lg:gap-10 items-center font-semibold duration-150
+}
+.promotion-link {
+    @apply block h-[50px] grid place-content-center px-[22px] bg-yellow rounded-[5px] font-semibold duration-150
+}
+.promotion-link:hover,
+.promotion-link:focus{
+    @apply bg-hoverYellow
+}
+.call-btn {
+    @apply block h-[50px] px-[22px] 
+}

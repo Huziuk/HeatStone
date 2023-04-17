@@ -7,6 +7,18 @@ module.exports = {
     './**/*.html'
   ],
   theme: {
+    screens: {
+      sm: "425px",
+      md: "768px",
+      md2: "900px",
+      lg: "1024px",
+      xl: "1280px",
+      full: "1440px"
+    },
+    container: {
+      center: true,
+      padding: 0
+    },
     fontFamily: {
       firsNeue: "TT Firs Neue",
       mulish: "Mulish"
@@ -19,14 +31,14 @@ module.exports = {
         blue: "#0085FF",
         yellow: "#FBE739",
         pink: "#FCE6EA",
-        secondDark: "#252525",
+        hoverDark: "#252525",
         secondGray: "#A0A0A0",
-        secondRed: "#C90000",
-        secondYellow: "#F0DC2F",
+        hoverRed: "#C90000",
+        hoverYellow: "#F0DC2F",
         secondWhite: "#EEF1F4",
         whiteDark: "#8B8B8B",
         whiteGray: "#EEEEEE",
-        
+        borderColor: "#B9B9B9"
       }
     },
   },
